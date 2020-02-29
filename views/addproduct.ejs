@@ -1,11 +1,13 @@
-<!DOCTYPE html>
-<html>
-<body>
+<%-include('layouts/head.ejs')%>
 
-<h2>HTML Forms</h2>
+<%-include('layouts/nav.ejs')%>
 
-<form action="/products" method="POST">
-  <label for="fname">First name:</label><br>
+<class >
+<br>
+<br>
+
+<form action="/add-products" method="POST">
+  <label for="image">First name:</label><br>
   <input type="text" id="fname" name="fname" ><br>
   <label for="lname">product:</label><br>
   <input type="text" id="fname" name="fname" ><br>
@@ -13,6 +15,6 @@
   <input type="number" id="lname" name="price" ><br><br>
   <input type="submit" value="Submit">
 </form> 
+</class>
 
-</body>
-</html>
+<%-include('layouts/end.ejs')%>
